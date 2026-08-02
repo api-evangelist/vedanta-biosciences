@@ -1,0 +1,79 @@
+generated: '2026-08-02'
+method: probed
+source: live probes of /.well-known/ and contract-discovery paths on Vedanta Biosciences hosts
+result: >-
+  none - no /.well-known/ document and no machine-readable API contract is published
+  on any Vedanta Biosciences host. vedantabio.com is a WordPress (Yoast SEO) corporate
+  and clinical-programs site; there is no API host, developer portal or docs host to
+  probe. No `WellKnown` pointer is wired in apis.yml, because nothing was found - the
+  well_known_catalog check is correctly left unearned.
+hosts:
+- host: https://vedantabio.com
+  platform: WordPress
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+  - path: /openapi.yaml
+    status: 404
+  - path: /swagger.json
+    status: 404
+  - path: /api-docs
+    status: 404
+  - path: /robots.txt
+    status: 200
+    note: >-
+      Yoast SEO generated block - "User-agent: * / Disallow:" (i.e. everything allowed),
+      Crawl-delay 10, and a Sitemap pointer to /sitemap_index.xml. No AI-crawler block
+      list is published.
+  - path: /sitemap.xml
+    status: 404
+    note: the working sitemap index is at /sitemap_index.xml on the www host
+- host: https://www.vedantabio.com
+  note: >-
+    identical results to the apex host on every /.well-known/ and contract path above
+    (same WordPress origin); /sitemap.xml resolves 200 here and is a Yoast sitemap index
+    listing post, page, people, press-release, publication, disease-area, role,
+    publication_year and author sitemaps - all editorial content, no API surface.
+hosts_that_do_not_resolve:
+- api.vedantabio.com
+- developer.vedantabio.com
+- docs.vedantabio.com
+- trust.vedantabio.com
+- security.vedantabio.com
+- status.vedantabio.com
+contract_discovery:
+  openapi: >-
+    not found - /openapi.json, /openapi.yaml, /swagger.json and /api-docs all 404 on
+    both the apex and www hosts, and no API host exists to probe at its root
+  graphql: >-
+    not applicable - no /graphql surface and no API host. (The site is WordPress, whose
+    /wp-json REST route is the CMS's own content endpoint, not a published product API,
+    and is not recorded as an API contract.)
+  mcp: not found - no hosted MCP server, no mcp. subdomain, nothing in the docs
+  a2a_agent_card: >-
+    not found - both /.well-known/agent-card.json and the legacy /.well-known/agent.json
+    return 404 on vedantabio.com and www.vedantabio.com. No a2a/ artifact is written,
+    per the search-only rule for agent cards.
+  conclusion: >-
+    Vedanta Biosciences publishes no machine-readable API contract of any kind. This is
+    a completed negative result, not an unfinished probe.
+x-evidence:
+  fetched: '2026-08-02'
+  method: curl GET with redirect-following, 15s timeout, both apex and www hosts
+  dns_method: dig +short A on candidate API/docs/status subdomains

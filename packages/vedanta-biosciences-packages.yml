@@ -1,0 +1,57 @@
+generated: '2026-08-02'
+method: searched
+source: registry searches of npm, PyPI, RubyGems, crates.io plus the GitHub org (2026-08-02)
+result: none
+notes: >-
+  Vedanta Biosciences publishes no client SDK, because it publishes no public API. It is
+  a late clinical-stage biopharmaceutical company, not a software vendor. No `SDKs`
+  pointer is wired in apis.yml and the sdk_count_1 / sdk_count_3 checks are correctly
+  left unearned. The company does, however, operate a real GitHub organization - it is
+  used to publish the R analysis code accompanying its peer-reviewed VE303 clinical
+  papers, not to distribute libraries. That org is wired as `GitHubOrganization` in
+  apis.yml because it genuinely exists and is first-party.
+packages: []
+registries_checked:
+- registry: npm
+  query: vedantabio / vedanta-biosciences
+  result: 0 packages; the @vedantabio scope does not exist (404)
+- registry: pypi
+  query: vedanta, vedantabio, vedanta-biosciences
+  result: 404 - no project under any spelling
+- registry: rubygems
+  query: vedantabio
+  result: 0 results
+- registry: crates.io
+  query: vedantabio
+  result: 0 results
+- registry: github
+  query: orgs/vedantabio
+  result: >-
+    org exists (login vedantabio, name "Vedanta Biosciences", blog vedantabio.com,
+    created 2022-09-15) with 3 public repositories, all research code rather than
+    client libraries. orgs/vedanta-biosciences and orgs/vedantabiosciences both 404.
+github_repositories:
+- name: VE303-Ph2-paper
+  url: https://github.com/vedantabio/VE303-Ph2-paper
+  language: R
+  description: >-
+    Analysis code accompanying the Phase 2 VE303 results (published in Nature Medicine).
+  created: '2024-08-27'
+  last_push: '2025-01-03'
+  license: none declared
+  is_client_library: false
+- name: VE303-Ph1-paper
+  url: https://github.com/vedantabio/VE303-Ph1-paper
+  language: R
+  description: >-
+    Code associated with the VE303 manuscript published in Cell Host & Microbe - Dsouza M,
+    Menon R, et al., "Colonization of the live biotherapeutic product VE303 and modulation
+    of the microbiota and metabolites in healthy volunteers".
+  created: '2022-10-13'
+  last_push: '2022-10-13'
+  license: none declared
+  is_client_library: false
+- name: pub-test
+  url: https://github.com/vedantabio/pub-test
+  description: empty scratch repository created 2022-09-29, 0 bytes, never used
+  is_client_library: false

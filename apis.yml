@@ -1,23 +1,112 @@
 aid: vedanta-biosciences
 name: Vedanta Biosciences
-description: 'Vedanta Biosciences is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Vedanta Biosciences is a late clinical-stage biopharmaceutical company
+  headquartered at 19 Blackstone Street in Cambridge, Massachusetts, founded by PureTech
+  Health together with a group of scientific co-founders who pioneered the modern understanding
+  of cross-talk between the human microbiome and the immune system. The company develops
+  a potential new category of oral Live Biotherapeutic Products built from rationally
+  defined consortia of human commensal bacteria grown from pure clonal cell banks rather
+  than donor-derived stool, and it maintains technical expertise in the manufacture of
+  live organisms. Its lead program, VE303, is an eight-strain defined bacterial consortium
+  in the global Phase 3 RESTORATiVE303 registrational study for the prevention of recurrent
+  Clostridioides difficile infection, following Phase 2 results showing a greater than
+  80% reduction in the odds of CDI recurrence versus placebo; VE202 is in development
+  for inflammatory bowel disease and VE707 for prevention of multidrug-resistant organism
+  infections. Vedanta has raised a $68 million Series D and a $106.5 million financing,
+  and its programs are supported by non-dilutive awards from BARDA and CARB-X. Vedanta
+  is a therapeutics developer, not a software vendor: it runs a WordPress marketing and
+  corporate site, publishes no developer portal, no SDKs, no GitHub organization and no
+  machine-readable API contract, and an August 2026 probe of vedantabio.com found no
+  OpenAPI, no /llms.txt, no MCP endpoint, no A2A agent card and an empty /.well-known/
+  discovery surface.'
 url: https://raw.githubusercontent.com/api-evangelist/vedanta-biosciences/refs/heads/main/apis.yml
+image: https://www.vedantabio.com/wp-content/uploads/2024/12/vedanta-favicon-300x300.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Pharmaceuticals
+- Microbiome
+- Live Biotherapeutic Products
+- Immunology
+- Gastroenterology
+- Infectious Disease
+- Clinical Research
+- Drug Development
+- Health Care
+- United States
 apis: []
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vedanta-biosciences-domain-security.yml
+- type: Packages
+  url: packages/vedanta-biosciences-packages.yml
+- type: Conformance
+  url: conformance/vedanta-biosciences-conformance.yml
+- type: LLMsTxt
+  url: llms/vedanta-biosciences-llms.txt
 - type: Website
+  url: https://www.vedantabio.com/
+- type: About
+  url: https://www.vedantabio.com/who-we-are/mission/
+- type: Leadership
+  url: https://www.vedantabio.com/who-we-are/leadership/
+- type: Team
+  url: https://www.vedantabio.com/who-we-are/team/
+- type: Pipeline
+  url: https://www.vedantabio.com/pipeline-programs/pipeline/
+- type: Science
+  url: https://www.vedantabio.com/our-science/defined-bacterial-consortia/
+- type: Platform
+  url: https://www.vedantabio.com/our-science/product-engine/
+- type: Manufacturing
+  url: https://www.vedantabio.com/our-science/manufacturing/
+- type: IntellectualProperty
+  url: https://www.vedantabio.com/our-science/intellectual-property/
+- type: Publications
+  url: https://www.vedantabio.com/our-science/publications/
+- type: Press
+  url: https://www.vedantabio.com/our-science/press-releases/
+- type: PressRSS
+  url: https://www.vedantabio.com/our-science/press-releases/feed/
+- type: BlogRSS
+  url: https://www.vedantabio.com/feed/
+- type: Partners
+  url: https://www.vedantabio.com/who-we-are/partnerships/
+- type: Careers
+  url: https://www.vedantabio.com/who-we-are/open-positions/
+- type: Contact
+  url: https://www.vedantabio.com/contact/
+- type: Support
+  url: https://www.vedantabio.com/contact/
+- type: TermsOfService
+  url: https://www.vedantabio.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.vedantabio.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/vedantabio
+- type: LinkedIn
+  url: https://www.linkedin.com/company/vedanta-biosciences-inc-
+- type: Twitter
+  url: https://x.com/vedantabio
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/vedanta-biosciences
+- type: SecondaryMarket
   url: https://forgeglobal.com/vedanta-biosciences_stock/
