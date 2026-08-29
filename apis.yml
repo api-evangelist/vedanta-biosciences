@@ -20,6 +20,17 @@ description: 'Vedanta Biosciences is a late clinical-stage biopharmaceutical com
   OpenAPI, no /llms.txt, no MCP endpoint, no A2A agent card and an empty /.well-known/
   discovery surface.'
 url: https://raw.githubusercontent.com/api-evangelist/vedanta-biosciences/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.vedantabio.com/wp-content/uploads/2024/12/vedanta-favicon-300x300.png
 x-type: company
 x-source: harvest:secondary-market
