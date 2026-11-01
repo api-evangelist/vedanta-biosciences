@@ -64,12 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Vedanta Biosciences is a late clinical-stage biopharmaceutical company in Cambridge, Massachusetts, founded by PureTech Health, developing oral Live Biotherapeutic Products from rationally defined consortia of human commensal bacteria grown from pure clonal cell banks. Its lead program VE303 is an eight-strain consortium in the global Phase 3 RESTORATiVE303 registrational study for prevention of recurrent *Clostridioides difficile* infection; VE202 targets inflammatory bowel disease and VE707 targets prevention of multidrug-resistant organism infections.
+Vedanta Biosciences is a late clinical-stage biopharmaceutical company headquartered at 19 Blackstone Street in Cambridge, Massachusetts, founded by PureTech Health together with a group of scientific co-founders who pioneered the modern understanding of cross-talk between the human microbiome and the immune system. The company develops a potential new category of oral Live Biotherapeutic Products built from rationally defined consortia of human commensal bacteria grown from pure clonal cell banks rather than donor-derived stool, and it maintains technical expertise in the manufacture of live organisms. Its lead program, VE303, is an eight-strain defined bacterial consortium in the global Phase 3 RESTORATiVE303 registrational study for the prevention of recurrent Clostridioides difficile infection, following Phase 2 results showing a greater than 80% reduction in the odds of CDI recurrence versus placebo; VE202 is in development for inflammatory bowel disease and VE707 for prevention of multidrug-resistant organism infections. Vedanta has raised a $68 million Series D and a $106.5 million financing, and its programs are supported by non-dilutive awards from BARDA and CARB-X. Vedanta is a therapeutics developer, not a software vendor: it runs a WordPress marketing and corporate site, publishes no developer portal, no SDKs, no GitHub organization and no machine-readable API contract, and an August 2026 probe of vedantabio.com found no OpenAPI, no /llms.txt, no MCP endpoint, no A2A agent card and an empty /.well-known/ discovery surface.
 
-**API posture: none.** Vedanta is a therapeutics developer, not a software vendor. An August 2026 enrichment probe of `vedantabio.com` found no developer portal, no API documentation, no SDK, and no machine-readable contract of any kind — no OpenAPI, no GraphQL, no MCP server, no A2A agent card, and an empty `/.well-known/` surface. See `well-known/vedanta-biosciences-well-known.yml` for the full probe record.
+**Areas:** Company · Biotechnology · Life Sciences · Pharmaceuticals · Microbiome · Live Biotherapeutic Products · Immunology · Gastroenterology · Infectious Disease · Clinical Research · Drug Development · Healthcare
 
-- Website — https://www.vedantabio.com/
-- Pipeline — https://www.vedantabio.com/pipeline-programs/pipeline/
-- Press releases — https://www.vedantabio.com/our-science/press-releases/
-- GitHub (research code, not SDKs) — https://github.com/vedantabio
-- Secondary market — https://forgeglobal.com/vedanta-biosciences_stock/
+## Vedanta Biosciences on APIs.io
+
+Everything profiled for Vedanta Biosciences is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/vedanta-biosciences/](https://apis.io/providers/vedanta-biosciences/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Vedanta Biosciences Domain Security](https://apis.io/security/vedanta-biosciences/vedanta-biosciences-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.vedantabio.com/)
+- [Support](https://www.vedantabio.com/contact/)
+- [Terms of service](https://www.vedantabio.com/terms-and-conditions/)
+- [Privacy policy](https://www.vedantabio.com/privacy-policy/)
+- [GitHub](https://github.com/vedantabio)
+
+## API Evangelist rating
+
+**Kin Score 11.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.8** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/vedanta-biosciences/](https://apis.io/providers/vedanta-biosciences/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Vedanta Biosciences: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/vedanta-biosciences/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
